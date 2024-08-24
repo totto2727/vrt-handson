@@ -20,5 +20,7 @@ test("制作事例のページ全体のVRT", async ({ page }) => {
   // 先に1.の課題を進めてください
 
   // 1. ページ全体のスナップショットを取得する処理を修正しよう！
-  await expect(page).toHaveScreenshot();
+  await expect(page).toHaveScreenshot({
+    fullPage: true,
+  });
 });
