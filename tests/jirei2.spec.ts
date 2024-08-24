@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-/* 課題を行う場合はコメントアウトを外してください
+/* 課題を行う場合はコメントアウトを外してください */
 test("制作事例のページ全体のVRT", async ({ page }) => {
   await page.goto("/jirei2.html");
 
@@ -10,4 +10,3 @@ test("制作事例のページ全体のVRT", async ({ page }) => {
   // 1. ページ全体のスナップショットを取得する処理を修正しよう！
   await expect(page).toHaveScreenshot();
 });
-*/
